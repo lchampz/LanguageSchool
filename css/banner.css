@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(252, 252, 252);
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    background-color: rgb(172, 216, 253);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapperInfo {
+    width: 100%;
+}
+
+#imgBanner {
+    width: 30%;
+    justify-content: center;
+}
+#infoBanner {
+    width: 70%;
+    justify-content: center;
+    text-align: justify;
+}
+
+.title {
+    color: white;
+    
+}
+
+.title h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 25px;
+    padding: 0.3rem 0 0.8rem 0;
+    font-weight: 400;
+}
+
+.cta {
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 15px;
+    width: fit-content;
+    padding: 5px 30px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: white;
+    color: rgb(172, 216, 253);
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    #imgBanner {
+        display: none;
+    }
+    #infoBanner {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-right: 2rem;
+    }
+
+    .title {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }

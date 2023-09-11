@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -29,18 +29,16 @@
 
     <main>
       <div class="banner">
-        
-          <div class="row" id="infoBanner">
-            <div class="title">
-              <h1>Tem interesse de conhecer uma nova lingua?</h1>
-              <div class="subtitle">Então mande um email pra gente!</div>
-              <div class="cta">Saiba mais</div>
-            </div>
-            <div class="row" id="imgBanner">
-                <img alt="icone de tradução" src="./img/tradIcon.png" />
-            </div>
+        <div class="row" id="infoBanner">
+          <div class="title">
+            <h1>Tem interesse de conhecer uma nova lingua?</h1>
+            <div class="subtitle">Então mande um email pra gente!</div>
+            <div class="cta">Saiba mais</div>
           </div>
-        
+          <div class="row" id="imgBanner">
+            <img alt="icone de tradução" src="./img/tradIcon.png" />
+          </div>
+        </div>
       </div>
 
       <section>Idiomas oferecidos</section>
@@ -148,29 +146,40 @@
 
       <div class="email">
         <div class="emailWrapper">
-            <div class="emailForm">
-                <p class="emailTitleForm">Envie-nos um email!</p>
-                <label>Email</label>
-                <input value="teste" placeholder="Digite seu email" />
-
-                <label>Sua mensagem</label>
-                <textarea placeholder="teste"></textarea>
+          <div class="emailForm">
+            <p class="emailTitleForm">Envie-nos um email!</p>
+            <span>
+                <div>
+                    <input placeholder="" />
+                    <label>Email</label>
+                </div>
+              
+                <div>
+                    <textarea placeholder=""></textarea>
+                    <label>Sua mensagem</label>
+                </div>
+              
+            </span>
+            <div class="emailButton">Enviar!</div>
+          </div>
+          <div class="emailOr">OU</div>
+          <div class="socialMediaWrapper">
+            <h1>Nossas redes sociais!</h1>
+            <div class="socialMediaLinks">
+              <span class="socialMedia">
+                <img src="./img/face.png" alt="face" />
+                <p>teste</p>
+              </span>
+              <span class="socialMedia">
+                <img src="./img/insta.png" alt="insta" />
+                <p>teste</p>
+              </span>
+              <span class="socialMedia">
+                <img src="./img/tt.png" alt="tt" />
+                <p>teste</p>
+              </span>
             </div>
-            <div class="emailOr">OU</div>
-            <div class="socialMediaWrapper">
-                <span class="socialMedia">
-                    <img src="./img/face.png" alt="face">
-                    <p>teste</p>
-                </span>
-                <span class="socialMedia">
-                    <img src="./img/insta.png" alt="insta">
-                    <p>teste</p>
-                </span>
-                <span class="socialMedia">
-                    <img src="./img/tt.png" alt="tt">
-                    <p>teste</p>
-                </span>
-            </div>
+          </div>
         </div>
       </div>
     </main>

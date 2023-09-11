@@ -1,47 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Escola de Idiomas</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/banner.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>teste</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="logo">LOGO</div>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">LOGO</div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div>
-            <div class="banner">
-                <div class="row" id="wrapperInfo">
-                    <div class="row" id="infoBanner">
-                        <div class="title">
-                            <h1>Tem interesse de conhecer uma nova lingua?</h1>
-                            <div class="subtitle">Então mande um email pra gente!</div>
-                            <div class="cta">Saiba mais</div>
-                        </div>
-                        <div class="row" id="imgBanner">Teste </div>
-                    </div>
-                    <img id="chevron" href="...">
-                </div>
+      <div class="banner">
+        
+          <div class="row" id="infoBanner">
+            <div class="title">
+              <h1>Tem interesse de conhecer uma nova lingua?</h1>
+              <div class="subtitle">Então mande um email pra gente!</div>
+              <div class="cta">Saiba mais</div>
             </div>
-    </main>
-</body>
+            <div class="row" id="imgBanner">
+                <img alt="icone de tradução" src="./img/tradIcon.png" />
+            </div>
+          </div>
+        
+      </div>
 
+      <section>Idiomas oferecidos</section>
+
+      <div class="carrossel">
+        <div class="carrosselMenu">
+          <p>Japonês</p>
+          <p>Inglês</p>
+          <p>Espanhol</p>
+          <p>Alemão</p>
+        </div>
+        <div class="carrosselInfo">
+          <div id="carrosselExplain">
+            <h2 class="carrosselTitle">{titulo}</h2>
+            <p class="paragraph">
+              Assim mesmo, a hegemonia do ambiente político assume importantes
+              posições no estabelecimento das diretrizes de desenvolvimento para
+              o futuro.
+            </p>
+            <p class="paragraph">
+              Nunca é demais lembrar o peso e o significado destes problemas,
+              uma vez que o desafiador cenário globalizado acarreta um processo
+              de reformulação e modernização das diretrizes de desenvolvimento
+              para o futuro.
+            </p>
+          </div>
+          <div id="carrosselSchedule">
+            <span class="schedule" id="morning">
+              <h2 class="carrosselTitle">Manhã</h2>
+              <p>9h - 10h</p>
+              <p>10h - 11h</p>
+            </span>
+            <span class="schedule" id="evening">
+              <h2 class="carrosselTitle">Tarde</h2>
+              <p>15h - 16h</p>
+              <p>16h - 17h</p>
+            </span>
+            <span class="schedule" id="night">
+              <h2 class="carrosselTitle">Noite</h2>
+              <p>20h - 21h</p>
+              <p>21h - 22h</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <section>Sobre Nós</section>
+
+      <div class="aboutUs">
+        <h2 class="aboutTitle">Colaboradores</h2>
+        <div class="aboutCollaborators">
+          <div class="aboutCard">
+            <div class="aboutImgCard"></div>
+            <div class="aboutName">League of legends da silva</div>
+            <div class="aboutDescription">
+              Desde ontem a noite um erro não identificado facilitou a resolução
+              de conflito da execução de requisições effcientes na API.
+            </div>
+          </div>
+
+          <div class="aboutCard">
+            <div class="aboutImgCard"></div>
+            <div class="aboutName">League of legends da silva</div>
+            <div class="aboutDescription">
+              Desde ontem a noite um erro não identificado facilitou a resolução
+              de conflito da execução de requisições effcientes na API.
+            </div>
+          </div>
+
+          <div class="aboutCard">
+            <div class="aboutImgCard"></div>
+            <div class="aboutName">League of legends da silva</div>
+            <div class="aboutDescription">
+              Desde ontem a noite um erro não identificado facilitou a resolução
+              de conflito da execução de requisições effcientes na API.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="organization">
+        <h2 class="organizationTitle">Sobre a organização</h2>
+        <div class="organizationDescription">
+          <p>
+            Fala pro cliente que o último pull request desse SCRUM otimizou a
+            renderização de compilação multi-plataforma de forma asincrona.
+            Nesse pull request, a normalização da data complexificou o merge na
+            criação de novos polyfills para suportar os processos.
+          </p>
+          <p>
+            Explica pro Product Onwer que a otimização de performance da
+            renderização do DOM facilitou a resolução de conflito no fechamento
+            automático das tags. Dado o fluxo de dados atual, o último pull
+            request desse SCRUM facilitou a resolução de conflito na definição
+            de variaveis com tipos estáticos.
+          </p>
+          <p>
+            Dado o fluxo de dados atual, o último pull request desse SCRUM
+            facilitou a resolução de conflito da renderização de floats
+            parciais.
+          </p>
+        </div>
+      </div>
+
+      <section>Fale Conosco</section>
+
+      <div class="email">
+        <div class="emailWrapper">
+            <div class="emailForm">
+                <p class="emailTitleForm">Envie-nos um email!</p>
+                <label>Email</label>
+                <input value="teste" placeholder="Digite seu email" />
+
+                <label>Sua mensagem</label>
+                <textarea placeholder="teste"></textarea>
+            </div>
+            <div class="emailOr">OU</div>
+            <div class="socialMediaWrapper">
+                <span class="socialMedia">
+                    <img src="./img/face.png" alt="face">
+                    <p>teste</p>
+                </span>
+                <span class="socialMedia">
+                    <img src="./img/insta.png" alt="insta">
+                    <p>teste</p>
+                </span>
+                <span class="socialMedia">
+                    <img src="./img/tt.png" alt="tt">
+                    <p>teste</p>
+                </span>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

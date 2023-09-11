@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Poppins', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,3 +48,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body::-webkit-scrollbar {
+	width: 7px;
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: #638A96; ;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: white; 
+	border-radius: 20px; 
+  }

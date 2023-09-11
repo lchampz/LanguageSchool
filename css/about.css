@@ -1,0 +1,85 @@
+.aboutUs {
+  background-color: #6fb7cd;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.aboutTitle {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.aboutCollaborators {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.aboutImgCard {
+  width: 10rem;
+  height: 10rem;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.aboutName {
+  font-weight: 600;
+  padding: 1rem 0rem;
+}
+
+.aboutDescription {
+  font-weight: 300;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.organization {
+  background-color: #e9faff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.organizationTitle {
+  color: #638a96;
+  padding-bottom: 1rem;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.organization p {
+  padding: 10px;
+  color: #638a96;
+}
+
+@media (max-width: 600px) {
+
+    .aboutUs {
+        padding:0rem;
+    }
+
+    .aboutTitle, .organizationTitle {
+        align-self: center;
+        padding: 1rem 0rem;
+    }
+
+    .aboutCollaborators {
+        flex: 1;
+        flex-wrap: wrap;
+    }
+}

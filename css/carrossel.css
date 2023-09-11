@@ -1,0 +1,136 @@
+.carrossel {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.carrosselMenu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.carrosselMenu p {
+    color: #638A96;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.carrosselInfo {
+    background-color: #6FB7CD;
+    width: 80%;
+    padding: 1.5rem;
+    display: flex;
+    
+}
+
+.carrosselTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+   
+}
+
+.paragraph {
+    padding: 1rem 0 0 0;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.schedule p {
+    color: white;
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+.carrosselTitle {
+    font-size: 25px;
+}
+
+
+#carrosselSchedule {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid white;
+    padding: 0rem 1rem 1rem 1rem;
+    width: 20%;
+}
+
+#carrosselExplain {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 1rem 0 0;
+}
+
+@media (max-width: 600px) {
+    .carrossel {
+        flex-direction: column;
+    }
+
+    .carrosselMenu {
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+        padding-bottom: 1.5rem;
+        background-color: rgb(252, 252, 252);
+    }
+
+    .carrosselMenu p {
+        font-size: 16px;
+    }
+
+    .carrosselInfo {
+        width: 100%;
+        padding: 1rem 0rem 1rem 0rem;
+        flex-direction: column;
+    }
+
+
+    #carrosselExplain {
+        width: 100%;
+       
+        text-align: justify;
+    }
+
+    #carrosselExplain .carrosselTitle {
+        align-self: center;
+    }
+
+    #carrosselExplain .paragraph {
+        font-size: 15px;
+        padding: 1rem;
+    }
+
+    #carrosselSchedule {
+        padding: 0;
+        border-left: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+        width: 100%;
+    }
+
+    #carrosselSchedule .carrosselTitle {
+        align-self: center;
+    }
+
+    .schedule {
+        flex-direction: column;
+    }
+  }

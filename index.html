@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/6131a9db1c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -20,20 +22,20 @@
       <nav>
         <div class="logo">LOGO</div>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre Nós</a></li>
-          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="#email">Fale Conosco</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="banner">
+      <div class="banner" id="home">
         <div class="row" id="infoBanner">
           <div class="title">
             <h1>Tem interesse de conhecer uma nova lingua?</h1>
             <div class="subtitle">Então mande um email pra gente!</div>
-            <div class="cta">Saiba mais</div>
+            <a style="color: white; text-decoration: none" href="#carrossel"><div class="cta">Saiba mais</div></a>
           </div>
           <div class="row" id="imgBanner">
             <img alt="icone de tradução" src="./img/tradIcon.png" />
@@ -41,24 +43,53 @@
         </div>
       </div>
 
-      <section>Idiomas oferecidos</section>
+      <section id="carrossel">Idiomas oferecidos</section>
 
       <div class="carrossel">
         <div class="carrosselMenu">
-          <p>Japonês</p>
-          <p>Inglês</p>
-          <p>Espanhol</p>
-          <p>Alemão</p>
+          <p id="b0" class="active" onclick="clicked(0)">Japonês</p>
+          <p id="b1" class="menuItem" onclick="clicked(1)">Inglês</p>
+          <p id="b2" class="menuItem" onclick="clicked(2)">Espanhol</p>
+          <p id="b3" class="menuItem" onclick="clicked(3)">Alemão</p>
         </div>
         <div class="carrosselInfo">
           <div id="carrosselExplain">
-            <h2 class="carrosselTitle">{titulo}</h2>
-            <p class="paragraph">
+            <h2 class="carrosselTitle" id="language">Japonês</h2>
+            <p class="paragraph" id="p0" style="opacity: 1; display: block">
               Assim mesmo, a hegemonia do ambiente político assume importantes
               posições no estabelecimento das diretrizes de desenvolvimento para
               o futuro.
+              <br> <br>
+              Nunca é demais lembrar o peso e o significado destes problemas,
+              uma vez que o desafiador cenário globalizado acarreta um processo
+              de reformulação e modernização das diretrizes de desenvolvimento
+              para o futuro.
             </p>
-            <p class="paragraph">
+            <p class="paragraph" id="p1">
+              Assim mesmo, a hegemonia do ambiente político assume importantes
+              posições no estabelecimento das diretrizes de desenvolvimento para
+              o futuro.
+              <br> <br>
+              Nunca é demais lembrar o peso e o significado destes problemas,
+              uma vez que o desafiador cenário globalizado acarreta um processo
+              de reformulação e modernização das diretrizes de desenvolvimento
+              para o futuro.
+            </p>
+            <p class="paragraph" id="p2">
+              Assim mesmo, a hegemonia do ambiente político assume importantes
+              posições no estabelecimento das diretrizes de desenvolvimento para
+              o futuro.
+              <br> <br>
+              Nunca é demais lembrar o peso e o significado destes problemas,
+              uma vez que o desafiador cenário globalizado acarreta um processo
+              de reformulação e modernização das diretrizes de desenvolvimento
+              para o futuro.
+            </p>
+            <p class="paragraph" id="p3">
+              Assim mesmo, a hegemonia do ambiente político assume importantes
+              posições no estabelecimento das diretrizes de desenvolvimento para
+              o futuro.
+              <br> <br>
               Nunca é demais lembrar o peso e o significado destes problemas,
               uma vez que o desafiador cenário globalizado acarreta um processo
               de reformulação e modernização das diretrizes de desenvolvimento
@@ -68,26 +99,23 @@
           <div id="carrosselSchedule">
             <span class="schedule" id="morning">
               <h2 class="carrosselTitle">Manhã</h2>
-              <p>9h - 10h</p>
-              <p>10h - 11h</p>
+              <p id="mor">9h - 10h<br><br>10h - 11h</p>
             </span>
-            <span class="schedule" id="evening">
+            <span class="schedule" id="evening" style="display: none">
               <h2 class="carrosselTitle">Tarde</h2>
-              <p>15h - 16h</p>
-              <p>16h - 17h</p>
+              <p id="eve">9h - 10h<br><br>10h - 11h</p>
             </span>
             <span class="schedule" id="night">
               <h2 class="carrosselTitle">Noite</h2>
-              <p>20h - 21h</p>
-              <p>21h - 22h</p>
+              <p id="ngt">9h - 10h<br><br>10h - 11h</p>
             </span>
           </div>
         </div>
       </div>
 
-      <section>Sobre Nós</section>
+      <section id="about">Sobre Nós</section>
 
-      <div class="aboutUs">
+      <div class="aboutUs" >
         <h2 class="aboutTitle">Colaboradores</h2>
         <div class="aboutCollaborators">
           <div class="aboutCard">
@@ -142,25 +170,25 @@
         </div>
       </div>
 
-      <section>Fale Conosco</section>
+      <section id="email">Fale Conosco</section>
 
-      <div class="email">
+      <div class="email" >
         <div class="emailWrapper">
           <div class="emailForm">
             <p class="emailTitleForm">Envie-nos um email!</p>
             <span>
                 <div>
-                    <input placeholder="" />
+                    <input required id="emailAddres" placeholder="" />
                     <label>Email</label>
                 </div>
               
                 <div>
-                    <textarea placeholder=""></textarea>
+                    <textarea required id="msg" placeholder=""></textarea>
                     <label>Sua mensagem</label>
                 </div>
               
             </span>
-            <div class="emailButton">Enviar!</div>
+            <div id="enviar" onclick="" class="emailButton">Enviar</div>
           </div>
           <div class="emailOr">OU</div>
           <div class="socialMediaWrapper">
@@ -183,5 +211,7 @@
         </div>
       </div>
     </main>
+    <script src="./js/emailSender.js"></script>
+    <script src="./js/carrossel.js"></script>
   </body>
 </html>

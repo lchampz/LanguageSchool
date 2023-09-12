@@ -1,136 +1,157 @@
 .carrossel {
-    
-    width: 100%;
-    height: 100%;
-    display: flex;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  min-height: 380px;
+  background-color: #6fb7cd;
 }
 
 .carrosselMenu {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    padding: 1rem 1rem 1rem 3rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #dcebef;
 }
 
 .carrosselMenu p {
-    color: #638A96;
-    font-weight: 600;
-    cursor: pointer;
-    width: fit-content;
-    font-size: 20px;
+  color: #638a96;
+  font-weight: 600;
+  
+  cursor: pointer;
+  width: fit-content;
+  font-size: 20px;
 }
 
 .carrosselInfo {
-    background-color: #6FB7CD;
-    width: 80%;
-    padding: 1.5rem;
-    display: flex;
-    
+  background-color: #6fb7cd;
+  width: 80%;
+  padding: 1.5rem;
+  display: flex;
 }
 
 .carrosselTitle {
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-   
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.active {
+  color: #6fb7cd !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.active::before {
+  content: "";
+
+  position: absolute;
+  margin-top: 7.5px;
+  margin-left: -10px;
+  width: 7px;
+  background-color: #6fb7cd;
+  height: 7px;
+  border-radius: 30px;
 }
 
 .paragraph {
-    padding: 1rem 0 0 0;
-    font-weight: 300;
-    font-size: 18px;
-    color: white;
+  padding: 1rem 0 0 0;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  display: none;
+  transition: all 0.5s ease-in;
 }
 
 .schedule {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  align-items: center;
 }
 
 .schedule p {
-    color: white;
-    padding: 0.5rem;
-    white-space: nowrap;
+  color: white;
+  padding: 0.5rem;
+  white-space: nowrap;
 }
 
 .carrosselTitle {
-    font-size: 25px;
+  font-size: 25px;
 }
 
-
 #carrosselSchedule {
-    display: flex;
-    flex-direction: column;
-    border-left: 1px solid white;
-    padding: 0rem 1rem 1rem 1rem;
-    width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid white;
+  padding: 0rem 1rem 1rem 1rem;
+  width: 20%;
 }
 
 #carrosselExplain {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    padding: 0 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 0 1rem 0 0;
 }
 
 @media (max-width: 800px) {
-    .carrossel {
-        flex-direction: column;
-    }
-
-    .carrosselMenu {
-        width: 100%;
-        flex-direction: row;
-        padding: 0;
-        padding-bottom: 1.5rem;
-        background-color: rgb(252, 252, 252);
-    }
-
-    .carrosselMenu p {
-        font-size: 16px;
-    }
-
-    .carrosselInfo {
-        width: 100%;
-        padding: 1rem 0rem 1rem 0rem;
-        flex-direction: column;
-    }
-
-
-    #carrosselExplain {
-        width: 100%;
-       
-        text-align: justify;
-    }
-
-    #carrosselExplain .carrosselTitle {
-        align-self: center;
-    }
-
-    #carrosselExplain .paragraph {
-        font-size: 15px;
-        padding: 1rem;
-    }
-
-    #carrosselSchedule {
-        padding: 0;
-        border-left: 0;
-        flex-direction: row;
-        justify-content: space-evenly;
-       
-        width: 100%;
-    }
-
-    #carrosselSchedule .carrosselTitle {
-        align-self: center;
-    }
-
-    .schedule {
-        flex-direction: column;
-    }
+  .carrossel {
+    flex-direction: column;
   }
+
+  .carrosselMenu {
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+    padding-bottom: 1.5rem;
+    background-color: rgb(252, 252, 252);
+  }
+
+  .carrosselMenu p {
+    font-size: 16px;
+  }
+
+  .carrosselInfo {
+    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+  }
+
+  #carrosselExplain {
+    width: 100%;
+
+    text-align: justify;
+  }
+
+  #carrosselExplain .carrosselTitle {
+    align-self: center;
+  }
+
+  #carrosselExplain .paragraph {
+    font-size: 15px;
+    padding: 1rem;
+  }
+
+  #carrosselSchedule {
+    padding: 0;
+    border-left: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+  }
+
+  #carrosselSchedule .carrosselTitle {
+    align-self: center;
+  }
+
+  .schedule {
+    flex-direction: column;
+  }
+
+  .active::before {
+    margin-top: 4.5px;
+  }
+}

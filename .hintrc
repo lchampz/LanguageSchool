@@ -17,6 +17,13 @@
       {
         "label": "off"
       }
-    ]
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id": "off"
+      }
+    ],
+    "highest-available-document-mode": "off"
   }
 }

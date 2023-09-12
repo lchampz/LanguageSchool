@@ -86,14 +86,16 @@
 
 input {
   font-family: "Poppins";
-  border: 2px solid #6fb7cd;
+  border: 2px solid #638A96;
   border-radius: 5px;
   position: relative;
   z-index: 1;
   background: transparent;
+  color:#638A96;
 }
 
 label {
+  color: #638A96;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -115,7 +117,7 @@ input:not(:placeholder-shown) + label, textarea:not(:placeholder-shown) + label 
 
 input:focus, textarea:focus {
     outline: none;
-    border: 2px solid #638A96;
+    border: 2px solid #6fb7cd;
 }
 
 textarea {
@@ -125,12 +127,14 @@ textarea {
   min-height: 90px;
   padding: 3px;
   max-height: 90px;
-  border: 2px solid #6fb7cd;
+  border: 2px solid #638A96;
   border-radius: 5px;
+  color:#638A96;
 }
 
 .emailButton {
   align-self: center;
+  width: fit-content;
   border: 2px solid #6fb7cd;
   padding: 3px 30px;
   transition: all 0.3s ease-in;

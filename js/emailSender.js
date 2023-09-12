@@ -1,5 +1,5 @@
 function sendEmail(){
-    emailjs.init("OCminWkiFsOX3x2fi");
+    emailjs.init("");
 
     let email = document.getElementById("emailAddres");
     let msg = document.getElementById("msg");
@@ -15,7 +15,7 @@ function sendEmail(){
     btn.style.backgroundColor = "#6fb7cd";
     btn.innerHTML = '<i class="fa-solid fa-rotate fa-spin" style="color: #ffffff;"></i>';
 
-    emailjs.send("emailSender", "template_fycrdau", templateParams, "OCminWkiFsOX3x2fi")
+    emailjs.send("emailSender", "template_fycrdau", templateParams, "")
     .then(response => {
         console.log("Sucesso! - ","[" + response.status + "] - ", response.text)
 

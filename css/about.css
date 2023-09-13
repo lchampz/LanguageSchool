@@ -31,9 +31,12 @@
 .aboutImgCard {
   width: 10rem;
   height: 10rem;
-  background-color: #d9d9d9;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 
 .aboutName {
   font-weight: 600;
